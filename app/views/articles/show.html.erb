@@ -19,6 +19,7 @@
 		<strong>Description:</strong>
 	</h4>
 	<hr> <%= simple_format(@article.description) %>
+	<!-- rendering collections (category) -->
 	<% if @article.categories.any? %>
 		<p>Categories: <%= render @article.categories %></p>
 	<% end %>
